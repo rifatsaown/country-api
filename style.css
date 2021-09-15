@@ -1,0 +1,35 @@
+body{
+        font-family: Arial, Helvetica, sans-serif;
+}
+#countries{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr) ;
+}
+.country{
+    border: 2px solid rgba(236, 75, 11, 0.836);
+    margin: 8px;
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    border-radius: 10px;
+}
+
+.details{
+    border: 5px solid rgb(236, 75, 11);
+    margin: 8px;
+    padding: 5px;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 900px) {
+    #countries{
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr) ;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #countries{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr) ;
+    }
+}
